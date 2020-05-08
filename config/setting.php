@@ -55,16 +55,16 @@ $config['settingSystemDefault'] = array(
 	'systemName'		=> "KodExplorer",
 	'systemDesc'		=> "——可道云.资源管理器",
 	'pathHidden'		=> "Thumb.db,.DS_Store,.gitignore,.git",//目录列表隐藏的项
-	'autoLogin'			=> "0",			// 是否自动登录；登录用户为guest
+	'autoLogin'			=> "1",			// 是否自动登录；登录用户为guest
 	'needCheckCode'		=> "0",			// 登陆是否开启验证码；默认关闭
-	'firstIn'			=> "explorer",	// 登录后默认进入[explorer desktop,editor]
+	'firstIn'			=> "editor",	// 登录后默认进入[explorer desktop,editor]
 
-	'newUserApp'		=> "trello,一起写office,微信,365日历,石墨文档,ProcessOn,计算器,icloud,OfficeConverter",
-	'newUserFolder'		=> "document,desktop,pictures,music",
-	'newGroupFolder'	=> "share,doc,pictures",	//新建分组默认建立文件夹
-	'groupShareFolder'	=> "share",
+	'newUserApp'		=> "",
+	'newUserFolder'		=> "",
+	'newGroupFolder'	=> "",	//新建分组默认建立文件夹
+	'groupShareFolder'	=> "",
 	
-	'desktopFolder'		=> 'desktop',	// 桌面文件夹别名
+	'desktopFolder'		=> '',	// 桌面文件夹别名
 	'versionType'		=> "A",			// 版本
 	'rootListUser'		=> 0,			// 组织架构根节点展示群组内用户
 	'rootListGroup'		=> 0,			// 组织架构根节点展示子群组
@@ -76,13 +76,13 @@ $config['settingSystemDefault'] = array(
 );
 //初始化默认菜单配置
 $config['settingSystemDefault']['menu'] = array(
-	array('name'=>'desktop','type'=>'system','url'=>'index.php?desktop','target'=>'_self','use'=>'1'),
+	//array('name'=>'desktop','type'=>'system','url'=>'index.php?desktop','target'=>'_self','use'=>'1'),
 	array('name'=>'explorer','type'=>'system','url'=>'index.php?explorer','target'=>'_self','use'=>'1'),
 	array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1')
 );
 if( strstr(I18n::defaultLang(),'zh') || strstr(I18n::getType(),'zh') ){
-	$config['settingSystemDefault']['newGroupFolder'] = "share,文档,图片资料,视频资料";
-	$config['settingSystemDefault']['newUserFolder'] = "我的文档,图片,视频,音乐";
+	$config['settingSystemDefault']['newGroupFolder'] = "";
+	$config['settingSystemDefault']['newUserFolder'] = "";
 }
 
 //新用户初始化默认配置
@@ -93,7 +93,7 @@ $config['settingDefault'] = array(
 	'fileIconSize'		=> "80",		// 图标大小
 	'animateOpen'		=> "1",			// dialog动画
 	'soundOpen'			=> "0",			// 操作音效
-	'theme'				=> "win10",		// app theme [mac,win7,win10,metro,metro_green,alpha]
+	'theme'				=> "mac",		// app theme [mac,win7,win10,metro,metro_green,alpha]
 	'wall'				=> "8",			// wall picture
 	"fileRepeat"		=> "replace",	// rename,replace,skip
 	"recycleOpen"		=> "1",			// 1 | 0 代表是否开启

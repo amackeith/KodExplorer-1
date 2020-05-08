@@ -446,6 +446,7 @@ class explorer extends Controller{
 		$rootIsparent = count($root)>0?true:false;
 		$publicIsparent = count($public)>0?true:false;
 		$treeData = array(
+			/*
 			'fav'=>array(
 				'name'      => LNG('fav'),
 				'ext' 		=> "tree-fav",
@@ -456,7 +457,7 @@ class explorer extends Controller{
 				'type'      => 'folder',
 				'open'      => true,
 				'isParent'  => count($fav)>0?true:false
-			),
+			),*/
 			'myHome'=>array(
 				'name'		=> LNG('root_path'),
 				'menuType'  => "menu-tree-root",
@@ -468,7 +469,7 @@ class explorer extends Controller{
 				'open'      => true,
 				'isParent'  => $rootIsparent
 			),
-
+			/*
 			'public'=>array(
 				'name'		=> $groupRootName,
 				'menuType'  => "menu-tree-group-root menu-tree-group-public",
@@ -479,7 +480,7 @@ class explorer extends Controller{
 				'type'      => 'folder',
 				'open'      => true,
 				'isParent'  => $publicIsparent
-			),
+			),*/
 			'myGroup'=>array(
 				'name'		=> LNG('my_kod_group'),//TODO
 				'menuType'  => "menu-tree-group-root",
