@@ -44,8 +44,8 @@ $config['settings']['appType'] = array(
 	array('type' => 'others','name' => 'app_group_others','class' => 'icon-ellipsis-horizontal'),
 );
 $config['defaultPlugins'] = array(
-	'adminer','DPlayer','imageExif','jPlayer','officeLive','photoSwipe','picasa',//'pdfjs',
-	'simpleClock','toolsCommon','VLCPlayer','webodf','yzOffice','zipView'
+	'adminer', 'toolsCommon'//,'DPlayer','imageExif','jPlayer','officeLive','photoSwipe','picasa',//'pdfjs',
+	//'simpleClock','VLCPlayer','webodf','yzOffice','zipView'
 );
 
 

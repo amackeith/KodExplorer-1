@@ -1,0 +1,36 @@
+I was here
+
+
+order id=1 created price=10 quantity=100000 side=bid venue=DONALD type=GTC ts=0
+no asks
+best bid:10
+ask   volume
+bid   volume
+10   100000
+order_id=1 modified price=10 quantity=50000 side=bid venue=DONALD type=GTC ts=1
+no asks
+best bid:10
+ask   volume
+bid   volume
+10   50000
+order id=1 amendment must have a lower quantity - amendment rejected
+ask   volume
+bid   volume
+10   50000
+order id=1 cannot have price changed  - amendment rejected
+ask   volume
+bid   volume
+10   50000
+order id=2 created price=5 quantity=30000 side=ask venue=DONALD type=GTC ts=4
+ask   volume
+5   30000
+bid   volume
+10   50000
+order id=3 created price=4 quantity=20000 side=ask venue=DONALD type=GTC ts=5
+ask   volume
+4   20000
+5   30000
+bid   volume
+10   50000
+Number of bids deleted:1
+Number of asks deleted:2
